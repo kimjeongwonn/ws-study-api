@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main style="max-width: 500px; height: 100vh; margin: 0 auto">
+      <h1 style="margin: unset">간단 채팅방</h1>
+
+      <form id="joinForm">
+        <fieldset>
+          <legend>입장 정보</legend>
+          <label>이름<input type="text" name="name" /></label>
+        </fieldset>
+        <input type="submit" value="입장" />
+      </form>
+
+      <section id="chatRoom" style="height: 500px; display: none">
+        <ul id="chatList"></ul>
+        <form id="chatForm" style="display: flex">
+          <input type="text" style="flex-grow: 1" />
+          <input type="submit" value="전송" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
